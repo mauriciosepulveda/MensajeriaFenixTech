@@ -12,8 +12,8 @@ function Profile() {
                                 <div className="card shadow-lg border-0 rounded-lg mt-5">
                                     <div className="container">
                                         <div className="left box-primary">
-                                          <img className="image" src="#" alt="" />
-                                          <h3 className="username text-center">Perfil</h3>
+                                          <img className="image" src="https://yt3.ggpht.com/-Y4ybONkbdYA/AAAAAAAAAAI/AAAAAAAAAAA/SCMi3HFru2w/s100-c-k-no-rj-c0xffffff/photo.jpg" alt="" />
+                                          <h3 className="username text-center">PERFIL</h3>
                                           <div className="d-grid"><a className="btn btn-primary btn-block" href="login.html">Editar Foto</a></div>
                                         </div>
                                     </div>
@@ -23,13 +23,13 @@ function Profile() {
                                                 <div className="col-md-6">
                                                     <div className="form-floating mb-3 mb-md-0">
                                                         <input className="form-control" id="inputFirstName" type="text" placeholder="Enter your first name" />
-                                                        <label for="inputFirstName">Primer Nombre</label>
+                                                        <label for="inputFirstName">Nombre(s)</label>
                                                     </div>
                                                 </div>
                                                 <div className="col-md-6">
                                                     <div className="form-floating">
                                                         <input className="form-control" id="inputLastName" type="text" placeholder="Enter your last name" />
-                                                        <label for="inputLastName">Apellido</label>
+                                                        <label for="inputLastName">Apellido(s)</label>
                                                     </div>
                                                 </div>
                                             </div>
@@ -52,7 +52,7 @@ function Profile() {
                                                 </div>
                                             </div>
                                             <div className="mt-4 mb-0">
-                                                <div className="d-grid"><a className="btn btn-primary btn-block" href="login.html">Guardar</a></div>
+                                                <div className="d-grid"><Link to="/" className="btn btn-primary btn-block">Guardar</Link></div>
                                             </div>
                                         </form>
                                     </div>
@@ -68,9 +68,9 @@ function Profile() {
                         <div className="d-flex align-items-center justify-content-between small">
                             <div className="text-muted">Copyright &copy; Your Website 2022</div>
                             <div>
-                                <a href="#">Política de privacidad</a>
+                                <a href="#">Politicas de Privacidad</a>
                                 &middot;
-                                <a href="#">Términos &amp; Condiciones</a>
+                                <a href="#">Terminos &amp; Condiciones</a>
                             </div>
                         </div>
                     </div>

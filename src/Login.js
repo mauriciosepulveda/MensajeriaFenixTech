@@ -1,9 +1,10 @@
 import './App.css';
 import {Link} from "react-router-dom";
+import { Fragment } from 'react';
 
 function Login() {
   return (
-    <div>
+    <Fragment>
         <div id="layoutAuthentication">
             <div id="layoutAuthentication_content">
                 <main>
@@ -26,7 +27,7 @@ function Login() {
                                                 <label for="inputPassword">Contraseña</label>
                                             </div>
                                             <div class="form-floating mb-3">
-                                                <Link to="/" class="btn btn-primary">Ingresar</Link>
+                                                <Link to="/" className="btn btn-primary">Ingresar</Link>
                                                 {/*<!--<a class="btn btn-primary" href="index.html">Ingresar</a>-->*/}
                                             </div>
                                             <div class="form-check mb-3">
@@ -34,7 +35,7 @@ function Login() {
                                                 <label class="form-check-label" for="inputRememberPassword">Recordar contraseña</label>
                                             </div>
                                             <div class="d-flex align-items-center justify-content-between mt-4 mb-">
-                                                <a class="small" href="password.html">Olvidé mi contraseña</a>
+                                                <Link to="/Password" class="small">¿Olvido la contraseña?</Link>
                                             </div>
                                         </form>
                                     </div>
@@ -54,9 +55,9 @@ function Login() {
                         <div class="d-flex align-items-center justify-content-between small">
                             <div class="text-muted">Copyright &copy; Your Website 2022</div>
                             <div>
-                                <a href="#">Política de privacidad</a>
+                                <a href="#">Politicas de Privacidad</a>
                                 &middot;
-                                <a href="#">Términos &amp; Condiciones</a>
+                                <a href="#">Terminos &amp; Condiciones</a>
                             </div>
                         </div>
                     </div>
@@ -66,7 +67,7 @@ function Login() {
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="%PUBLIC_URL%/js/scripts.js"></script>
 
-    </div>
+    </Fragment>
   );
 }
 

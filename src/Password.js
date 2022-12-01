@@ -12,20 +12,20 @@ function Password() {
                                 <div className="card shadow-lg border-0 rounded-lg mt-5">
                                     <div className="card-header"><h3 className="text-center font-weight-light my-4">Recuperar Contraseña</h3></div>
                                     <div className="card-body">
-                                        <div className="small mb-3 text-muted">Ingresa tu direccion de email te enviaremos un link para restablecer la contraseña.</div>
+                                        <div className="small mb-3 text-muted">Ingresa tu direcciín de email y te enviaremos un link para restablecer la contraseña.</div>
                                         <form>
                                             <div className="form-floating mb-3">
                                                 <input className="form-control" id="inputEmail" type="email" placeholder="name@example.com" />
-                                                <label for="inputEmail"> Correo electronico</label>
+                                                <label for="inputEmail"> Correo electrónico</label>
                                             </div>
                                             <div className="d-flex align-items-center justify-content-between mt-4 mb-0">
-                                                <a className="small" href="login.html">Volver al login</a>
+                                                <Link to="/Login" className="small">Volver al Login</Link>
                                                 <Link to="/Password" className="btn btn-primary">Restablecer Contraseña</Link>
                                             </div>
                                         </form>
                                     </div>
                                     <div className="card-footer text-center py-3">
-                                        <div className="small"><a>¿No tienes una cuenta? </a><a href="register.html">Registrate</a></div>
+                                        <div className="small"><a>¿No tienes una cuenta? </a><Link to ="/Register">Regístrate</Link></div>
                                     </div>
                                 </div>
                             </div>
@@ -39,7 +39,7 @@ function Password() {
                         <div className="d-flex align-items-center justify-content-between small">
                             <div className="text-muted">Copyright &copy; Your Website 2022</div>
                             <div>
-                                <a href="#">Política de privacidad</a>
+                                <a href="#">Politicas de Privacidad</a>
                                 &middot;
                                 <a href="#">Términos &amp; Condiciones</a>
                             </div>

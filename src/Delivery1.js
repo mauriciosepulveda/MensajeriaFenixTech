@@ -1,9 +1,10 @@
 import './App.css';
 import {Link} from "react-router-dom";
+import { Fragment } from 'react';
 
 function Delivery1() {
   return (
-    <div>
+    <Fragment>
         <nav className="sb-topnav navbar navbar-expand navbar-dark bg-dark">
             {/*<!-- Navbar Brand-->*/}
             <Link to="/index" className="navbar-brand ps-3">Mensajeria Fenix Tech</Link>
@@ -12,7 +13,7 @@ function Delivery1() {
             {/*<!-- Navbar Search-->*/}
             <form className="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
                 <div className="input-group">
-                    <input className="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
+                    <input className="form-control" type="text" placeholder="Buscar" aria-label="Buscar" aria-describedby="btnNavbarSearch" />
                     <button className="btn btn-primary" id="btnNavbarSearch" type="button"><i className="fas fa-search"></i></button>
                 </div>
             </form>
@@ -57,25 +58,25 @@ function Delivery1() {
                 <main>
                     <div className="card mb-4">
                         <div className="card-header">
-                            <img src="%PUBLIC_URL%/Imagen/Top.jpg" width="1050px" height="250px"/>
+                            <img src="/Imagen/Top.jpg" className="image3" width="1050px" height="250px"/>
                         </div>
                     </div>
                     <figure className="text-center">
                         <blockquote className="blockquote">
-                        <p  style="background-color:rgb(35, 35, 35); color:rgb(255, 255, 255);">DIMENSIONES</p>
+                        <p  style={{backgroundColor:'rgb(35, 35, 35)', color:'rgb(255, 255, 255)'}}>DIMENSIONES</p>
                         </blockquote>
                     </figure>
                     <div className="input-group mb-3">
                         <span className="input-group-text" id="basic-addon1">Ancho</span>
-                        <input type="text" className="form-control" placeholder="cm" aria-label="Username"/>
+                        <input type="text" className="form-control" placeholder="Cm" aria-label="Username"/>
                         <span className="input-group-text" id="basic-addon1">Alto</span>
-                        <input type="text" className="form-control" placeholder="cm" aria-label="Server"/>
+                        <input type="text" className="form-control" placeholder="Cm" aria-label="Server"/>
                         <span className="input-group-text" id="basic-addon1">Largo</span>
-                        <input type="text" className="form-control" placeholder="cm" aria-label="Server"/>
+                        <input type="text" className="form-control" placeholder="Cm" aria-label="Server"/>
                     </div>
                     <figure className="text-center">
                         <blockquote className="blockquote">
-                        <p  style="background-color:rgb(35, 35, 35); color:rgb(255, 255, 255);">¿ES MERCANCIA DELICADA?</p>
+                          <p  style={{backgroundColor:'rgb(35, 35, 35)', color:'rgb(255, 255, 255)'}}>¿ES MERCANCIA DELICADA?</p>
                         </blockquote>
                     </figure>
 
@@ -92,32 +93,32 @@ function Delivery1() {
 
                     <figure className="text-center">
                         <blockquote className="blockquote">
-                        <p  style="background-color:rgb(35, 35, 35); color:rgb(255, 255, 255);">PESO</p>
+                          <p  style={{backgroundColor:'rgb(35, 35, 35)', color:'rgb(255, 255, 255)'}}>PESO</p>
                         </blockquote>
                     </figure>
 
                     <div className="input-group mb-3">
                         <span className="input-group-text" id="inputGroup-sizing-default">KG</span>
-                        <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"/>
+                        <input type="text" className="form-control" placeholder="Kg" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"/>
                     </div>
 
                 </main>
                 <div className="column" >
-                        <button className="buttonEnd">Atras</button>
+                        <Link to="/" className="buttonEnd">Atras</Link>
                         <button className="buttonEnd">Guardar</button>
-                        <button className="buttonEnd">Siguiente</button>            
+                        <Link to="/Delivery2" className="buttonEnd">Siguiente</Link>         
                 </div>
-                    
+               
                 <footer className="py-4 bg-light mt-auto">
                     <div className="container-fluid px-4">
                         <div className="d-flex align-items-center justify-content-between small">
-                            <div className="text-muted">MinTIC 2022 - GRUPO 2253 - EQUIPO 13</div>
+                            <div className="text-muted">MinTIC 2022 - Grupo 2253 - Equipo 13</div>
                         </div>
                     </div>
                 </footer>
-            </div>
+            </div>   
         </div>
-    </div>
+    </Fragment>
 
 
   );

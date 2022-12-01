@@ -12,7 +12,7 @@ function Delivery3() {
             {/*<!-- Navbar Search-->*/}
             <form className="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
                 <div className="input-group">
-                    <input className="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
+                    <input className="form-control" type="text" placeholder="Buscar" aria-label="Buscar" aria-describedby="btnNavbarSearch" />
                     <button className="btn btn-primary" id="btnNavbarSearch" type="button"><i className="fas fa-search"></i></button>
                 </div>
             </form>
@@ -57,25 +57,25 @@ function Delivery3() {
                 <main>
                     <div className="card mb-4">
                         <div className="card-header">
-                            <img src="%PUBLIC_URL%/Imagen/Disponibilidad.jpg" width="1050px" height="250px"/>
+                            <img src="/Imagen/Disponibilidad.jpg" width="1050px" height="250px"/>
                         </div>
                     </div>
                     <figure className="text-center">
                         <blockquote className="blockquote">
-                          <p  style="background-color:rgb(35, 35, 35); color:rgb(255, 255, 255);">SOLICITANTE</p>
+                          <p  style={{backgroundColor:'rgb(35, 35, 35)', color:'rgb(255, 255, 255)'}}>SOLICITANTE</p>
                         </blockquote>
                     </figure>
                     <div className="input-group mb-3">
                         <span className="input-group-text" id="basic-addon1">Primer Nombre</span>
-                        <input type="text" className="form-control" placeholder="xxxx" aria-label="Username"/>
+                        <input type="text" className="form-control" placeholder="Primer nombre" aria-label="Username"/>
                         <span className="input-group-text" id="basic-addon1">Segundo Nombre</span>
-                        <input type="text" className="form-control" placeholder="xxxx" aria-label="Server"/>
+                        <input type="text" className="form-control" placeholder="Segundo nombre" aria-label="Server"/>
                     </div>
                     <div className="input-group mb-3">
                         <span className="input-group-text" id="basic-addon1">Primer Apellido</span>
-                        <input type="text" className="form-control" placeholder="xxxx" aria-label="Username"/>
+                        <input type="text" className="form-control" placeholder="Primer apellido" aria-label="Username"/>
                         <span className="input-group-text" id="basic-addon1">Segundo Apellido</span>
-                        <input type="text" className="form-control" placeholder="xxxx" aria-label="Server"/>
+                        <input type="text" className="form-control" placeholder="Segundo apellido" aria-label="Server"/>
                     </div>
                     <div className="input-group mb-3">
                         <span className="input-group-text" id="basic-addon1">Tipo ID</span>
@@ -87,20 +87,20 @@ function Delivery3() {
                             <option value="3">NIT</option>
                             <option value="3">TI</option>
                           </select>
-                        <span className="input-group-text" id="basic-addon1">Documento</span>
-                        <input type="text" className="form-control" placeholder="xxxx" aria-label="Server"/>
+                        <span className="input-group-text" id="basic-addon1">N° Documento</span>
+                        <input type="text" className="form-control" placeholder="Documento" aria-label="Server"/>
                     </div>
                 </main>
                 <div className="column" >
-                        <button className="buttonEnd">Atras</button>
+                        <Link to="/Delivery2" className="buttonEnd">Atras</Link>
                         <button className="buttonEnd">Guardar</button>
-                        <button className="buttonEnd">Siguiente</button>            
+                        <Link to="/Delivery4" className="buttonEnd">Siguiente</Link>           
                 </div>
                
                 <footer className="py-4 bg-light mt-auto">
                     <div className="container-fluid px-4">
                         <div className="d-flex align-items-center justify-content-between small">
-                            <div className="text-muted">MinTIC 2022 - GRUPO 2253 - EQUIPO 13</div>
+                            <div className="text-muted">MinTIC 2022 - Grupo 2253 - Equipo 13</div>
                         </div>
                     </div>
                 </footer>

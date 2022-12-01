@@ -6,13 +6,13 @@ function Tracking() {
     <div>
     <nav className="sb-topnav navbar navbar-expand navbar-dark bg-dark">
              {/*<!-- Navbar Brand-->*/}
-            <a className="navbar-brand ps-3" href="index.html">Mensajeria Fenix Tech</a>
+             <Link to="/index" className="navbar-brand ps-3">Mensajeria Fenix Tech</Link>
              {/*<!-- Sidebar Toggle-->*/}
             <button className="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i className="fas fa-bars"></i></button>
              {/*<!-- Navbar Search-->*/}
             <form className="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
                 <div className="input-group">
-                    <input className="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
+                    <input className="form-control" type="text" placeholder="Buscar" aria-label="Buscar" aria-describedby="btnNavbarSearch" />
                     <button className="btn btn-primary" id="btnNavbarSearch" type="button"><i className="fas fa-search"></i></button>
                 </div>
             </form>
@@ -21,9 +21,9 @@ function Tracking() {
                 <li className="nav-item dropdown">
                     <a className="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i className="fas fa-user fa-fw"></i></a>
                     <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                        <li><a className="dropdown-item" href="#!">Editar Perfil</a></li>
+                        <Link to="/Profile" className="dropdown-item">Editar Perfil</Link>
                         <li><hr className="dropdown-divider" /></li>
-                        <li><a className="dropdown-item" href="#!">Cerrar sesión</a></li>
+                        <Link to="/Login" className="dropdown-item">Cerrar sesión</Link>
                     </ul>
                 </li>
             </ul>
@@ -41,8 +41,8 @@ function Tracking() {
                             </a>
                             <div className="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                 <nav className="sb-sidenav-menu-nested nav">
-                                    <a className="nav-link" href="layout-static.html">Solicitud</a>
-                                    <a className="nav-link" href="layout-sidenav-light.html">Seguimiento</a>
+                                    <Link to="/Delivery1" className="nav-link">Solicitud</Link>
+                                    <Link to="/Tracking" className="nav-link">Seguimiento</Link>
                                 </nav>
                             </div>
                         </div>
@@ -96,11 +96,11 @@ function Tracking() {
                 <footer className="py-4 bg-light mt-auto">
                     <div className="container-fluid px-4">
                         <div className="d-flex align-items-center justify-content-between small">
-                            <div className="text-muted">MinTIC 2022 - GRUPO 2253 - EQUIPO 13</div>
+                            <div className="text-muted">MinTIC 2022 - Grupo 2253 - Equipo 13</div>
                             <div>
-                                <a href="#">Privacy Policy</a>
+                                <a href="#">Politicas de Privacidad</a>
                                 &middot;
-                                <a href="#">Terms &amp; Conditions</a>
+                                <a href="#">Terminos &amp; Condiciones</a>
                             </div>
                         </div>
                     </div>

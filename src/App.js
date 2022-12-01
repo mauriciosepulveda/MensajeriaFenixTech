@@ -4,22 +4,22 @@ import {Link} from "react-router-dom";
 function App() {
   return (
     <div>
-      <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+      <nav className="sb-topnav navbar navbar-expand navbar-dark bg-dark">
             {/*<!-- Navbar Brand-->*/}
             <Link to="/index" className="navbar-brand ps-3">Mensajeria Fenix Tech</Link>
             {/*<!-- Sidebar Toggle-->*/}
-            <button className="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+            <button className="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i className="fas fa-bars"></i></button>
             {/*<!-- Navbar Search-->*/}
             <form className="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
                 <div className="input-group">
                     <input className="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
-                    <button className="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
+                    <button className="btn btn-primary" id="btnNavbarSearch" type="button"><i className="fas fa-search"></i></button>
                 </div>
             </form>
             {/*<!-- Navbar-->*/}
             <ul className="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
                 <li className="nav-item dropdown">
-                    <a className="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                    <a className="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i className="fas fa-user fa-fw"></i></a>
                     <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                         <Link to="/Profile" className="dropdown-item">Editar Perfil</Link>
                         <li><hr className="dropdown-divider" /></li>
@@ -41,7 +41,7 @@ function App() {
                             </a>
                             <div className="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                                 <nav className="sb-sidenav-menu-nested nav">
-                                    <Link to="/Delivery2" className="nav-link">Solicitud</Link>
+                                    <Link to="/Delivery1" className="nav-link">Solicitud</Link>
                                     <Link to="/Tracking" className="nav-link">Seguimiento</Link>
                                 </nav>
                             </div>
@@ -66,7 +66,7 @@ function App() {
                                 <div className="card bg-primary text-white mb-4">
                                     <div className="card-body">Realizar envio</div>
                                     <div className="card-footer d-flex align-items-center justify-content-between">
-                                        <a className="small text-white stretched-link" href="#">Comenzar</a>
+                                        <Link to="/Delivery1" className="small text-white stretched-link">Comenzar</Link>
                                         <div className="small text-white"><i className="fas fa-angle-right"></i></div>
                                     </div>
                                 </div>
@@ -75,7 +75,7 @@ function App() {
                                 <div className="card bg-warning text-white mb-4">
                                     <div className="card-body">Seguimiento de paquetes</div>
                                     <div className="card-footer d-flex align-items-center justify-content-between">
-                                        <a className="small text-white stretched-link" href="#">Ver detalles</a>
+                                        <Link to="/Tracking" className="small text-white stretched-link">Ver detalles</Link>
                                         <div className="small text-white"><i className="fas fa-angle-right"></i></div>
                                     </div>
                                 </div>
@@ -86,9 +86,9 @@ function App() {
                 <footer className="py-4 bg-light mt-auto">
                     <div className="container-fluid px-4">
                         <div className="d-flex align-items-center justify-content-between small">
-                            <div className="text-muted">MinTIC 2022 - GRUPO 2253 - EQUIPO 13</div>
+                            <div className="text-muted">MinTIC 2022 - Grupo 2253 - Equipo 13</div>
                             <div>
-                                <a href="#">Política de privacidad</a>
+                                <a href="#">Politicas de Privacidad</a>
                                 &middot;
                                 <a href="#">Terminos &amp; Condiciones</a>
                             </div>
